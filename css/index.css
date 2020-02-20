@@ -1,1 +1,345 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v9/iJWKBXyIfDnIV7nBrXk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7Eyjmmd8WU.ttf) format('truetype');
+}
+.container {
+  display: flex;
+  height: 100%;
+  font-family: 'Rubik', 'Sans-Serif';
+}
+@media (max-width: 1000px) {
+  .container {
+    font-size: 1em;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #49A4C3;
+  width: 30%;
+  font-weight: 400;
+  padding: 0 5% 4% 1%;
+}
+@media (max-width: 1000px) {
+  .container .left-side {
+    justify-content: space-evenly;
+    padding: 0 5% 4% 1%;
+  }
+}
+@media (max-width: 900px) {
+  .container .left-side {
+    width: 100%;
+    padding: 0 5% 4% 5%;
+    text-align: center;
+  }
+}
+.container .left-side .introduction {
+  display: flex;
+  flex-direction: column;
+}
+.container .left-side .introduction h1 {
+  font-size: 3em;
+  padding-top: 10%;
+  color: #D6E0F0;
+  font-weight: 500;
+  text-align: left;
+}
+@media (max-width: 900px) {
+  .container .left-side .introduction h1 {
+    text-align: center;
+  }
+}
+.container .left-side .introduction p {
+  padding-top: 5%;
+  text-align: left;
+  color: #D6E0F0;
+}
+@media (max-width: 900px) {
+  .container .left-side .introduction p {
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  .container .left-side .introduction p {
+    padding-top: 2%;
+  }
+}
+.container .left-side .about-me {
+  line-height: 1.2;
+}
+.container .left-side .about-me h2 {
+  color: #D2F4FF;
+  font-weight: 500;
+  font-size: 1.3em;
+  padding: 6% 0 0 0;
+}
+.container .left-side .about-me p {
+  color: #F8FDFF;
+}
+.container .left-side .about-me .bold-p {
+  font-weight: 500;
+  font-size: 1.2em;
+  padding-top: 2%;
+}
+.container .left-side .about-me a {
+  text-decoration: none;
+  color: #D6E0F0;
+}
+.container .left-side .about-me div:nth-child(1) {
+  padding-bottom: 3%;
+}
+.container .left-side .about-me div:nth-child(2) {
+  padding-bottom: 3%;
+}
+.container .right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: darksalmon;
+  width: 70%;
+  padding: 1% 5%;
+}
+@media (max-width: 1000px) {
+  .container .right-side {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 900px) {
+  .container .right-side {
+    width: 100%;
+    padding: 5%;
+  }
+}
+@media (max-width: 900px) {
+  .container .right-side .summary {
+    padding-bottom: 5%;
+  }
+}
+.container .right-side .summary h1 {
+  font-size: 2.5em;
+  color: #D2F4FF;
+  font-weight: 500;
+}
+.container .right-side .summary #summary-text {
+  padding-top: 1%;
+  color: #F8FDFF;
+  line-height: 1.1;
+}
+@media (max-width: 900px) {
+  .container .right-side .skills {
+    padding-bottom: 5%;
+  }
+}
+.container .right-side .skills .skill-category {
+  font-size: 1.3em;
+  color: #D2F4FF;
+  font-weight: 500;
+}
+.container .right-side .skills .skill-text {
+  padding: 1% 0 2% 0;
+  color: #F8FDFF;
+}
+@media (max-width: 900px) {
+  .container .right-side .work-history {
+    padding-bottom: 5%;
+  }
+}
+.container .right-side .work-history div {
+  padding-top: 2%;
+}
+.container .right-side .work-history h2 {
+  font-size: 1.3em;
+  color: #D2F4FF;
+  font-weight: 500;
+}
+.container .right-side .work-history p {
+  color: #F8FDFF;
+}
+.container .right-side .work-history p .restaurant-name {
+  font-weight: 500;
+  color: #D2F4FF;
+}
+.container .right-side .work-history ul {
+  padding: 1% 0 0 1%;
+  color: #F8FDFF;
+  list-style-type: decimal;
+  list-style: inside;
+}
+@media (max-width: 900px) {
+  .container .right-side .projects {
+    padding-bottom: 5%;
+  }
+}
+.container .right-side .projects div {
+  padding-top: 2%;
+}
+.container .right-side .projects h2 {
+  font-size: 1.3em;
+  color: #D2F4FF;
+  font-weight: 500;
+}
+.container .right-side .projects p {
+  color: #D2F4FF;
+  font-weight: 500;
+}
+.container .right-side .projects ul {
+  padding: 1% 0 0 1%;
+  color: #F8FDFF;
+  list-style-type: decimal;
+  list-style: inside;
+}
+.container .italic {
+  font-style: italic;
+}
